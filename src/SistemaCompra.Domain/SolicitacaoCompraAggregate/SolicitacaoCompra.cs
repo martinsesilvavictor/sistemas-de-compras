@@ -43,7 +43,7 @@ namespace SistemaCompra.Domain.SolicitacaoCompraAggregate
             TotalGeralPagamento();
 
             if (!Valido())
-                throw new BusinessRuleException("A soicitação de compra deve conter pelo menos um item.");
+                throw new BusinessRuleException("A solicitação de compra deve possuir itens!");                
         }
 
         public void TotalGeralPagamento()
